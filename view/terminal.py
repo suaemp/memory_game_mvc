@@ -6,3 +6,5 @@ def console_clear():
         command = 'cls'
     os.system(command)
 
+def print_picked_letters(picked_letters):
+    print(picked_letters)

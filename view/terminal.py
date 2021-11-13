@@ -8,3 +8,15 @@ def console_clear():
 
 def print_picked_letters(picked_letters):
     print(picked_letters)
+
+def get_board_size_from_user():
+    heigth = int(input("Please give the heigth of the board: "))
+    width = int(input("Please give the width of the board: "))
+    return heigth, width
+
+def print_error_message(message):
+    print(message)
+
+def print_board(board):
+    for row in board:
+        print(row)

@@ -1,4 +1,5 @@
 import os
+import string
 
 def console_clear():
     command = 'clear'
@@ -18,5 +19,19 @@ def print_error_message(message):
     print(message)
 
 def print_board(board):
-    for row in board:
-        print(row)
+    size = len(board)
+
+    for i in range(size):
+        print(f"   {i + 1}", end="")
+    print()
+
+    for i in range(size):
+        print(f"\n{string.ascii_uppercase[i]} ", end="")
+
+        for j in range(len(board[i])):
+            print(" #  ", end="")
+        print()
+
+def get_input(message):
+    data = input(f"{message}")
+    return data

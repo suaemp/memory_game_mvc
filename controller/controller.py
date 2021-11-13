@@ -5,7 +5,6 @@ from model import model
 def clear_console():
     view.console_clear()
 
-
 def get_board_parameters():
     heigth, width = view.get_board_size_from_user()
     if model.is_value_correct(heigth, width):
